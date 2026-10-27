@@ -1,59 +1,149 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <h1 align="center">💻 Sistem Informasi Order Management System (OMS) & Perakitan PC</h1>
+  <p align="center">
+    <strong>Studi Kasus: PT Aneka Teknologi Solusindo (Diablotech)</strong><br>
+    Tugas Akhir / Skripsi — Program Studi Sistem Informasi, Universitas Komputer Indonesia (UNIKOM)
+  </p>
 </p>
 
-## About Laravel
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Google_Gemini-AI_Powered-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini AI">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 Tentang Proyek
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Aplikasi **Order Management System (OMS)** berbasis web ini dirancang khusus untuk mendigitalisasi dan mengotomatisasi proses bisnis penjualan ritel komponen komputer, perakitan PC (*Custom Build*), hingga manajemen purnajual (*Quality Control* dan Garansi) pada **PT Aneka Teknologi Solusindo**.
 
-## Learning Laravel
+Sistem ini dilengkapi dengan algoritma validasi kompatibilitas perangkat keras (*Hardware Clash Detection*) untuk memastikan seluruh komponen PC yang dipilih pelanggan 100% kompatibel dari segi soket, dimensi fisik (*Form Factor*), hingga kebutuhan daya listrik sebelum pesanan dapat diproses.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur Utama
 
-## Laravel Sponsors
+### 🛒 1. Smart E-Katalog & Perakitan PC (Customer)
+* **Auto-Match Daily Build:** Algoritma rekomendasi rakitan PC harian otomatis yang dijamin kompatibel (mencocokkan *Motherboard*, *Processor*, *RAM*, *VGA*, *Cooler*, *Storage*, *Casing*, dan kalkulasi daya *PSU*).
+* **Hardware Clash Validation:** Validasi keranjang belanja secara *real-time* yang mengunci *checkout* dan memberikan peringatan spesifik jika ditemukan ketidakcocokan komponen (misal: ukuran radiator *Cooler* atau panjang *VGA* melebihi kapasitas *Casing*).
+* **AI Chatbot Assistant:** Konsultasi interaktif terintegrasi dengan AI (Google Gemini) untuk membantu pelanggan meracik spesifikasi PC sesuai anggaran dan kebutuhan.
+* **Manajemen PO & Pembayaran:** Mendukung alur transaksi B2B/B2C mulai dari persetujuan/revisi *Purchase Order* (PO), cetak surat penawaran (*Offering Letter*) & *Invoice*, hingga unggah bukti pembayaran (DP maupun Pelunasan).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🛡️ 2. Manajemen Operasional & Transaksi (Admin)
+* **Dashboard Analitik:** Ringkasan metrik penjualan, status pesanan aktif, dan ketersediaan stok barang.
+* **Master Data & Bundling:** Pengelolaan data inventaris komponen (lengkap dengan atribut teknis seperti *socket*, *tipe memory*, *form factor*, dan *power watt*) serta fitur paket rakitan (*Bundle*).
+* **Manajemen Pesanan Terpadu:** Verifikasi pembayaran, penentuan ongkos kirim, penugasan teknisi perakit (*Assign Teknisi*), hingga pelacakan resi pengiriman.
+* **Laporan & Audit:** Pencetakan laporan penjualan periodik (PDF) dan pemantauan riwayat aktivitas pengguna (*Activity Logs*) yang dapat diekspor ke PDF.
 
-### Premium Partners
+### 🔧 3. Quality Control (QC) & Klaim Garansi/Retur (Teknisi & Admin)
+* **Digitalisasi Dokumen QC:** Teknisi dapat mengunggah dokumentasi pengujian fisik (foto tampak depan, belakang, kondisi menyala, dan catatan teknis) untuk setiap unit PC yang dirakit.
+* **Cetak Sertifikat Garansi & QC Otomatis:** Pembuatan dokumen garansi dan hasil lulus uji QC berformat PDF secara otomatis yang dapat diunduh langsung oleh pelanggan.
+* **Manajemen Retur (RMA):** Alur pengajuan retur barang oleh pelanggan, penginputan resi retur, hingga validasi hasil pengecekan fisik oleh teknisi.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🛠️ Teknologi yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* **Backend:** Laravel Framework (v12.x), PHP 8.x
+* **Frontend:** Blade Templating Engine, Tailwind CSS, Alpine.js / JavaScript, FontAwesome
+* **Asset Bundler:** Vite
+* **Database:** MySQL / MariaDB
+* **Integrasi Eksternal:** Google Gemini API (AI Chatbot), DOMPDF / Laravel PDF (Cetak Invoice, Offering, Laporan, & Dokumen QC)
+* **Deployment Environment:** Docker, Nginx, aaPanel
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🚀 Panduan Instalasi Lokal
 
-## Security Vulnerabilities
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal (*local environment*):
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Prasyarat
+* PHP >= 8.2
+* Composer
+* Node.js & NPM
+* MySQL
 
-## License
+### Langkah Instalasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. **Clone repositori ini:**
+   ```bash
+   git clone [https://github.com/kevinfernaldyyy/anekatech-skripsi-unikom-SI.git](https://github.com/kevinfernaldyyy/anekatech-skripsi-unikom-SI.git)
+   cd anekatech-skripsi-unikom-SI
+   ```
+
+2. **Instal dependensi PHP dan JavaScript:**
+   ```bash
+   composer install
+   npm install
+   ```
+
+3. **Konfigurasi file Environment (`.env`):**
+   Salin file `.env.example` menjadi `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   Sesuaikan konfigurasi database di dalam file `.env`:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=nama_database_anda
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+   *(Opsional) Tambahkan API Key Gemini Anda jika ingin menguji fitur AI Chatbot:*
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+4. **Generate Application Key & Storage Link:**
+   ```bash
+   php artisan key:generate
+   php artisan storage:link
+   ```
+
+5. **Jalankan Migrasi Database:**
+   ```bash
+   php artisan migrate --seed
+   ```
+   *(Catatan: Jika menggunakan file dump SQL, silakan impor file `.sql` langsung melalui phpMyAdmin atau aplikasi database client Anda).*
+
+6. **Jalankan Server Aplikasi:**
+   Buka dua terminal terpisah untuk menjalankan *server* Laravel dan *compiler* Vite:
+   ```bash
+   # Terminal 1
+   php artisan serve
+
+   # Terminal 2
+   npm run dev
+   ```
+   Akses aplikasi melalui browser di `http://localhost:8000`.
+
+---
+
+## 👥 Pembagian Hak Akses (Role)
+
+Sistem ini menggunakan autentikasi *Multi-Role* dengan pembagian akses sebagai berikut:
+1. **Admin (`/admin/*`):** Mengelola seluruh data master, memvalidasi pembayaran, menugaskan teknisi, memproses retur, dan mencetak laporan eksekutif.
+2. **Teknisi (`/teknisi/*`):** Menerima tugas perakitan/instalasi, melakukan inspeksi komponen, mengisi formulir *Quality Control* (QC), dan memvalidasi barang retur.
+3. **Customer (`/customer/*`):** Menjelajahi katalog, merakit PC dengan sistem validasi otomatis, melakukan pemesanan, mengunggah bukti bayar, mengunduh dokumen garansi/QC, dan mengajukan retur.
+
+---
+
+## 👨‍💻 Informasi Pengembang
+
+Disusun dan dikembangkan sebagai syarat kelulusan Sarjana Komputer (S.Kom):
+
+* **Nama:** Kevin Fernaldy
+* **Program Studi:** Sistem Informasi
+* **Fakultas:** Teknik dan Ilmu Komputer
+* **Institusi:** Universitas Komputer Indonesia (UNIKOM) — Bandung, Indonesia
+
+---
+<p align="center">
+  <i>Hak Cipta © 2026 Kevin Fernaldy. Seluruh hak cipta dilindungi undang-undang.</i>
+</p>
